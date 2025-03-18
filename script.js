@@ -2,8 +2,7 @@ const arr = [1, 2, 3, 4, 1, 0, 2, 2];
 
 const divide = (arr, n) => {
   // Write your code here
-	let n = 2;
-
+	
 
 let a1 = a.splice(0, n); 
 let a2 = a.splice(0, n); 
