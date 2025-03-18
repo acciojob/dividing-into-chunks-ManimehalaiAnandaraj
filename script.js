@@ -5,19 +5,19 @@ const divide = (arr, n) => {
 	let res=[];
 	let currentchunk=[];
 	let currentsum=0;
-	for(let i=0;i<n;i++)
+	for(let i=0;i<arr.length;i++)
 		{
-			if(currentsum +i <=n)
+			if(currentsum + arr[i] <=n)
 			{
-				currentchunk.push(i);
-				currentsum += i;
+				currentchunk.push(arr[i]);
+				currentsum += arr[i];
 				
 			}
 			else
 			{
 				res.push(currentchunk);
-				currentchunk = [i];
-				currentsum =i;
+				currentchunk =arr[i];
+				currentsum =arr[i];
 			}
 		}
 	if(currentchunk.length>0)
@@ -26,9 +26,5 @@ const divide = (arr, n) => {
 	}
 	return res;
 }
-	
-	
-
-
 const n = prompt("Enter n: ");
 alert(JSON.stringify(divide(arr, n)));
