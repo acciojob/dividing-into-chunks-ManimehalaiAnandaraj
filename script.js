@@ -16,7 +16,7 @@ const divide = (arr, n) => {
 			else
 			{
 				res.push(currentchunk);
-				currentchunk =arr[i];
+				currentchunk =[arr[i]];
 				currentsum =arr[i];
 			}
 		}
