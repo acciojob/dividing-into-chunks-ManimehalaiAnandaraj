@@ -4,10 +4,10 @@ const divide = (arr, n) => {
   // Write your code here
 	
 
-let a1 = a.splice(0, n); 
-let a2 = a.splice(0, n); 
-let a3 = a.splice(0, n); 
-let a4 = a.splice(0, n);
+let a1 = arr.splice(0, n); 
+let a2 = arr.splice(0, n); 
+let a3 = arr.splice(0, n); 
+let a4 = arr.splice(0, n);
 
 
 console.log( a1);
